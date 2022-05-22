@@ -49,6 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
 ?>
 
   <form action="" method="post">
+<input name="csrf" type="hidden" value="<?php print csrf(); ?>" >   
     <input name="login" placeholder="Введи логин"/>
     <input name="pass" placeholder="Введи пароль"/>
     <input type="submit" id="login" value="Войти" />
