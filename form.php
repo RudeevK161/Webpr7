@@ -13,7 +13,7 @@
   
   function csrf(){
 			return $_SESSION['csrf']=md5(uniqid("", true));
-    
+  }
   if (!empty($messages)) {
     print('<div class="messages">');
     // Выводим все сообщения.
